@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivanta Scents | Luxury Perfume Brand</title>
+  
+  <!-- Elegant Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      line-height: 1.6;
+      color: #f5f5f5;
+      background: #000000;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1508979826421-9a7d87b48c34?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header div {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin: 0;
+      color: #d4af37; /* gold */
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #f5f5f5;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #d4af37;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #d4af37;
+    }
+
+    .fragrances {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .fragrance {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #d4af37;
+      text-align: center;
+      color: #f5f5f5;
+    }
+
+    .fragrance img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      color: #d4af37;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #d4af37;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #b8860b;
+    }
+
+    /* Testimonials */
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .review {
+      background: #111;
+      border: 1px solid #d4af37;
+      border-radius: 10px;
+      padding: 20px;
+      font-style: italic;
+      text-align: center;
+      color: #f5f5f5;
+    }
+
+    .review strong {
+      display: block;
+      margin-top: 15px;
+      font-style: normal;
+      color: #d4af37;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #f5f5f5;
+      margin-top: 40px;
+      border-top: 1px solid #d4af37;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#fragrances">Fragrances</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div>
+      <h1>Nivanta Scents</h1>
+      <p>Nature's whisper in a bottle</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Nivanta Scents</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Derived from the soul of <em>Nirvāṇa</em>, the Sanskrit word for peace, stillness, and liberation,
+      <strong>Nivanta Scents</strong> captures moments of clarity and serenity. Each fragrance is a
+      gentle journey inward, crafted to awaken calm, confidence, and timeless beauty.
+    </p>
+  </section>
+
+  <!-- Fragrances Section -->
+  <section id="fragrances">
+    <h2>Our Fragrances</h2>
+    <div class="fragrances">
+      <div class="fragrance">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1c6?auto=format&fit=crop&w=500&q=80" alt="Fair Warm">
+        <h3>Fairwarm (30ml)</h3>
+        <p>A delicate blend that embraces warmth and elegance.</p>
+        <p class="price">₦ Price: 30ml</p>
+        <a href="https://wa.me/2349016934582" class="btn">Order Now</a>
+      </div>
+      <div class="fragrance">
+        <img src="https://images.unsplash.com/photo-1596464716121-9e9f815f1d5b?auto=format&fit=crop&w=500&q=80" alt="Delightful Shade">
+        <h3>Delightful Shade (50ml)</h3>
+        <p>A refreshing fragrance with subtle notes of tranquility.</p>
+        <p class="price">₦ Price: 50ml</p>
+        <a href="https://wa.me/2349016934582" class="btn">Order Now</a>
+      </div>
+      <div class="fragrance">
+        <img src="https://images.unsplash.com/photo-1600185365725-12b9e8c4b8b4?auto=format&fit=crop&w=500&q=80" alt="Dark Mane">
+        <h3>Dark Mane (50ml)</h3>
+        <p>Mystery and strength captured in a bold, deep scent.</p>
+        <p class="price">₦ Price: 50ml</p>
+        <a href="https://wa.me/2349016934582" class="btn">Order Now</a>
+      </div>
+      <div class="fragrance">
+        <img src="https://images.unsplash.com/photo-1556228578-8622734457a5?auto=format&fit=crop&w=500&q=80" alt="Pleasant Whisper">
+        <h3>Pleasant Whisper (50ml)</h3>
+        <p>A gentle, calming fragrance that soothes the soul.</p>
+        <p class="price">₦ Price: 50ml</p>
+        <a href="https://wa.me/2349016934582" class="btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+      <div class="review">
+        "Nivanta Scents has redefined luxury perfumes for me. The fragrance lasts all day and feels so elegant."
+        <strong>- Aisha, Lagos</strong>
+      </div>
+      <div class="review">
+        "Dark Mane is my favorite. It’s bold, unique, and gets me compliments everywhere I go."
+        <strong>- Daniel, Abuja</strong>
+      </div>
+      <div class="review">
+        "Pleasant Whisper is the perfect everyday scent – calming, soft, and truly refreshing."
+        <strong>- Chika, Port Harcourt</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">Have a question or want to order? Reach us directly:</p>
+    <div style="text-align:center;">
+      <a href="https://wa.me/2349016934582" class="btn">Chat on WhatsApp</a>
+      <p>Or call us: <strong>09016934582</strong></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nivanta Scents | Crafted with elegance</p>
+  </footer>
+</body>
+</html>
